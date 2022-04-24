@@ -1,0 +1,18 @@
+<div class="main">
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form)">
+    <h3>GET IN TOUCH</h3>
+    <input
+      formControlName="name"
+      type="text"
+      required
+      placeholder="Your name"
+    />
+    <input formControlName="email" type="text" required placeholder="Email" />
+    <textarea
+      formControlName="message"
+      rows="4"
+      placeholder="How can we help you?"
+    ></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>

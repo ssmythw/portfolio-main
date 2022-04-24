@@ -1,0 +1,57 @@
+.main {
+  width: 75%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-weight: 600;
+  }
+
+  .about-content {
+    width: 50%;
+    font-size: 2rem;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .skills {
+    display: flex;
+    gap: 150px;
+    margin-top: 50px;
+    text-align: center;
+
+    i {
+      font-size: 6rem;
+    }
+  }
+}
+
+.blue-background {
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(to right, blue 50%, rgb(0, 10, 27) 50%);
+  background-size: 200%;
+  transition: background-position 0.5s;
+  &:hover {
+    background-position: -100%;
+  }
+}
+
+.card {
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 25%;
+  background-color: #000000;
+  height: 1px;
+  margin-bottom: 40px;
+}
